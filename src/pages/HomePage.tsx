@@ -1,13 +1,12 @@
-import React from "react";
 import StickyBottomNavigationBar from "../components/StickyBottomNavigationBar";
 
 const HomePage = () => {
   return (
     <>
-      <p>hello</p>
-      <nav className="flex justify-center">
+      <p>hello everyone</p>
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50">
         <StickyBottomNavigationBar />
-      </nav>
+      </div>
     </>
   );
 };
