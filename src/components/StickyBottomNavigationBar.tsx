@@ -9,7 +9,7 @@ import ToolTip from "./ToolTip";
 
 function StickyBottomNavigationBar() {
   return (
-    <DynamicDock gapX={5} baseWidth={32}>
+    <DynamicDock gapX={4} baseWidth={32}>
       <div className="dock-item flex items-center justify-center relative group">
         <ToolTip label="Home" />
 
@@ -59,7 +59,7 @@ function StickyBottomNavigationBar() {
       </div>
       <div className="w-[2px] h-2 bg-gray-300"></div>
       <div className="dock-item flex items-center justify-center relative group">
-        <button className="w-10 h-10 rounded-full hover:bg-gray-100 flex items-center justify-center transition-colors">
+        <button className="w-9 h-9 rounded-full hover:bg-gray-100 flex items-center justify-center transition-colors">
           <img src={Sun} alt="Instagram" className="w-5 h-5 scale-x-[-1]" />
         </button>
       </div>

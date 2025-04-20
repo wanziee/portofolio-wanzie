@@ -31,7 +31,7 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
     const items = dock.querySelectorAll(".dock-item");
 
     const minWidth = baseWidth;
-    const maxWidth = baseWidth + 20;
+    const maxWidth = baseWidth + 25;
     const influenceRadius = 150;
 
     const setInitialStyle = () => {
@@ -87,7 +87,7 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
   }, [gapX, baseWidth]);
 
   return (
-    <div className="fixed bottom-0 left-1/2 -translate-x-1/2 z-50">
+    <div className="fixed bottom-[1px] left-1/2 -translate-x-1/2 z-50">
       <div
         ref={dockRef}
         className="flex border px-2 border-gray-200 backdrop-blur bg-white/15  shadow-lg rounded-full will-change-transform overflow-visible"

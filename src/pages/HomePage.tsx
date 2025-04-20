@@ -1,13 +1,116 @@
 import StickyBottomNavigationBar from "../components/StickyBottomNavigationBar";
+import Foto from "../assets/foto.jpeg";
+import ExperienceCard from "../components/ExperienceCard";
+import Telkom from "../assets/telkom.jpg";
+import Oracle from "../assets/oracle.jpeg";
+import Bsi from "../assets/logo-bsi.png";
+import EducationCard from "../components/EducationCard";
 
 const HomePage = () => {
   return (
-    <>
-      <p>hello everyone</p>
-      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-50">
+    <div>
+      <section id="hero">
+        <div className="flex justify-between items-start max-w-6xl mx-auto">
+          {/* Teks kiri */}
+          <div className="flex-1 space-y-2">
+            <h1 className="text-6xl sm:text-5xl xl:text-6xl font-bold flex items-center gap-4 sm:gap-2">
+              <span>Hi, I'm Ichwan 👋</span>
+            </h1>
+
+            <p className="text-base md:text-xl max-w-xl">
+              UI/UX Designer, software engineer
+            </p>
+          </div>
+
+          {/* Foto kanan */}
+          <div>
+            <div className="size-28 rounded-full overflow-hidden">
+              <img
+                src={Foto}
+                alt="Theodore Mangowal"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" className="mt-[40px]">
+        {/* Judul */}
+        <h2 className="text-xl font-bold">About</h2>
+
+        {/* Isi konten */}
+        <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground text-gray-500">
+          <p>
+            I'm passionate about coding and design, with a deep love for
+            painting and drawing as my creative hobbies. Currently, I'm working
+            on two personal projects:{" "}
+            <a
+              href="https://github.com/wanziee/ZielyApp"
+              className="text-black font-semibold underline"
+            >
+              GameLoad
+            </a>
+            , a website for game top-ups, and{" "}
+            <a
+              href="https://github.com/wanziee/ZielyApp"
+              className="text-black font-semibold underline"
+            >
+              Quizzie
+            </a>
+            , a fun and educational quiz app.
+          </p>
+        </div>
+      </section>
+
+      <section id="work" className="mt-[40px]">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <h2 className="text-xl font-bold">Work Experience</h2>
+          <ExperienceCard
+            logo={Telkom}
+            company="PT.Telkom Indonesia"
+            position="IT Intern - Server Room Operations"
+            date="Sep 2024 – Now"
+            description="I interned at PT Telkom Indonesia in the server room, where I supported various technical tasks such as system monitoring, hardware setup, and troubleshooting. This experience gave me hands-on exposure to data center operations and helped me better understand IT infrastructure in a real-world environment."
+            link="https://kreate.gg"
+          />
+          <ExperienceCard
+            logo="/kreate-logo.png"
+            company="Kreate"
+            position="Founder & CEO"
+            date="Sep 2024 – Now"
+            description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
+            link="https://kreate.gg"
+          />
+        </div>
+      </section>
+
+      <section id="education" className="mt-[40px]">
+        <div className="flex min-h-0 flex-col gap-y-3">
+          <h2 className="text-xl font-bold">Education</h2>
+          <EducationCard
+            logo={Oracle}
+            institution="Oracle Corporation"
+            certificate="Professional Certification"
+            date="Sep 2024 – Now"
+            description="I participated in the Oracle Data Modeler training program, where I learned how to design and manage database structures using Oracle's modeling tools. The program enhanced my understanding of relational databases, ER diagrams, and best practices in data architecture."
+            link="https://kreate.gg"
+          />
+          <EducationCard
+            logo={Bsi}
+            institution="Bina Sarana Informatika University"
+            certificate="Student"
+            date="Sep 2024 – Now"
+            description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
+            link="https://kreate.gg"
+          />
+        </div>
+      </section>
+
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
         <StickyBottomNavigationBar />
       </div>
-    </>
+    </div>
   );
 };
 
