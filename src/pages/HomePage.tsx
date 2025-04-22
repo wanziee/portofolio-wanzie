@@ -7,6 +7,20 @@ import Bsi from "../assets/logo-bsi.png";
 import EducationCard from "../components/EducationCard";
 import SkillsLabel from "../components/SkillsLabel";
 
+const skillsDatas = [
+  "Design",
+  "React",
+  "Laravel",
+  "Swift",
+  "Typescript",
+  "Php",
+  "Project Management",
+  "Python",
+  "Painting",
+  "Drawing",
+  "SwiftUI",
+];
+
 const HomePage = () => {
   return (
     <div>
@@ -78,7 +92,7 @@ const HomePage = () => {
           <ExperienceCard
             logo="/kreate-logo.png"
             company="Kreate"
-            position="Founder & CEO"
+            position="null"
             date="Sep 2024 – Now"
             description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
             link="https://kreate.gg"
@@ -109,7 +123,7 @@ const HomePage = () => {
       </section>
 
       <section id="skills" className="mt-[40px]">
-        <SkillsLabel skill="Design" />
+        <SkillsLabel skills={skillsDatas} />
       </section>
 
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">

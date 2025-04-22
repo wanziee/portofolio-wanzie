@@ -21,7 +21,7 @@ function StickyBottomNavigationBar() {
         </a>
       </div>
       <div className="dock-item flex items-center justify-center relative group">
-        <ToolTip label="Home" />
+        <ToolTip label="Projects" />
         <a
           href="#"
           className="w-12 h-12 rounded-full  hover:bg-gray-100 flex items-center justify-center transition-colors"
