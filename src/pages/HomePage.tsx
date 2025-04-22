@@ -5,6 +5,7 @@ import Telkom from "../assets/telkom.jpg";
 import Oracle from "../assets/oracle.jpeg";
 import Bsi from "../assets/logo-bsi.png";
 import EducationCard from "../components/EducationCard";
+import SkillsLabel from "../components/SkillsLabel";
 
 const HomePage = () => {
   return (
@@ -105,6 +106,10 @@ const HomePage = () => {
             link="https://kreate.gg"
           />
         </div>
+      </section>
+
+      <section id="skills" className="mt-[40px]">
+        <SkillsLabel skill="Design" />
       </section>
 
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
