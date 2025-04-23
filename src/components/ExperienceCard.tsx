@@ -15,7 +15,6 @@ const ExperienceCard = ({
   position,
   date,
   description,
-  link,
 }: ExperienceCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
