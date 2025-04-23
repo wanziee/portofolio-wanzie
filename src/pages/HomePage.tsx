@@ -85,7 +85,7 @@ const HomePage = () => {
             logo={Telkom}
             company="PT.Telkom Indonesia"
             position="IT Intern - Server Room Operations"
-            date="Sep 2022 – Okt 2022"
+            date="Sep 2022 – Oct 2022"
             description="I interned at PT Telkom Indonesia in the server room, where I supported various technical tasks such as system monitoring, hardware setup, and troubleshooting. This experience gave me hands-on exposure to data center operations and helped me better understand IT infrastructure in a real-world environment."
           />
         </div>
@@ -105,7 +105,7 @@ const HomePage = () => {
             logo={Bsi}
             institution="Bina Sarana Informatika University"
             certificate="Student"
-            date="Okt 2023 – Now"
+            date="Oct 2023 – Now"
             description="Pursuing a Bachelor's degree in Informatics with a focus on software development, UI/UX design, and digital product innovation. Actively engaging in academic and extracurricular activities to strengthen both technical and soft skills in preparation for a career in the tech industry."
           />
         </div>
