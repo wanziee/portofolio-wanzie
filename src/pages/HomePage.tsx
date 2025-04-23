@@ -115,15 +115,19 @@ const HomePage = () => {
         <SkillsLabel skills={skillsDatas} />
       </section>
 
-      <section id="projects">
-        <div className="space-y-12 w-full py-12">
-          <div className="flex flex-col items-center justify-center text-center">
+      <section id="projects" className="mt-[40px]">
+        <div className="space-y-12 w-full py-10">
+          <div className="flex flex-col items-center justify-center text-center space-y-2">
             <div className="inline-block rounded-lg bg-black text-white px-3 py-1 text-sm">
               My Projects
             </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
               Checkout my latest work!
             </h2>
+            <p className="text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+              Half of these are still under construction. The other half?
+              They've magically disappeared into the land of private repos 🧙‍♂️✨
+            </p>
           </div>
           <div></div>
         </div>
