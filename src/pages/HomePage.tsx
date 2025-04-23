@@ -87,7 +87,6 @@ const HomePage = () => {
             position="IT Intern - Server Room Operations"
             date="Sep 2024 – Now"
             description="I interned at PT Telkom Indonesia in the server room, where I supported various technical tasks such as system monitoring, hardware setup, and troubleshooting. This experience gave me hands-on exposure to data center operations and helped me better understand IT infrastructure in a real-world environment."
-            link="https://kreate.gg"
           />
           <ExperienceCard
             logo="/kreate-logo.png"
@@ -95,7 +94,6 @@ const HomePage = () => {
             position="null"
             date="Sep 2024 – Now"
             description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
-            link="https://kreate.gg"
           />
         </div>
       </section>
@@ -109,7 +107,6 @@ const HomePage = () => {
             certificate="Professional Certification"
             date="Sep 2024 – Now"
             description="I participated in the Oracle Data Modeler training program, where I learned how to design and manage database structures using Oracle's modeling tools. The program enhanced my understanding of relational databases, ER diagrams, and best practices in data architecture."
-            link="https://kreate.gg"
           />
           <EducationCard
             logo={Bsi}
@@ -117,7 +114,6 @@ const HomePage = () => {
             certificate="Student"
             date="Sep 2024 – Now"
             description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
-            link="https://kreate.gg"
           />
         </div>
       </section>

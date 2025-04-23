@@ -6,7 +6,6 @@ type ExperienceCardProps = {
   position: string;
   date: string;
   description: string;
-  link: string;
 };
 
 const ExperienceCard = ({

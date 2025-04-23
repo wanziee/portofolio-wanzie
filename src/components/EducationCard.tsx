@@ -6,7 +6,6 @@ type EducationCardProps = {
   certificate: string;
   date: string;
   description: string;
-  link: string;
 };
 
 const EducationCard = ({
