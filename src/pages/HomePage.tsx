@@ -126,6 +126,20 @@ const HomePage = () => {
         <SkillsLabel skills={skillsDatas} />
       </section>
 
+      <section id="projects">
+        <div className="space-y-12 w-full py-12">
+          <div className="flex flex-col items-center justify-center text-center">
+            <div className="inline-block rounded-lg bg-black text-white px-3 py-1 text-sm">
+              My Projects
+            </div>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+              Checkout my latest work!
+            </h2>
+          </div>
+          <div></div>
+        </div>
+      </section>
+
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
         <StickyBottomNavigationBar />
       </div>
