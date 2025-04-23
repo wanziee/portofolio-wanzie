@@ -88,13 +88,6 @@ const HomePage = () => {
             date="Sep 2024 – Now"
             description="I interned at PT Telkom Indonesia in the server room, where I supported various technical tasks such as system monitoring, hardware setup, and troubleshooting. This experience gave me hands-on exposure to data center operations and helped me better understand IT infrastructure in a real-world environment."
           />
-          <ExperienceCard
-            logo="/kreate-logo.png"
-            company="Kreate"
-            position="null"
-            date="Sep 2024 – Now"
-            description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
-          />
         </div>
       </section>
 
@@ -113,7 +106,7 @@ const HomePage = () => {
             institution="Bina Sarana Informatika University"
             certificate="Student"
             date="Sep 2024 – Now"
-            description="Seksi sibuk merangkap semua pekerjaan tech, product, and business. Hopefully I'll be able to facilitate and help creators monetize and manage their content."
+            description="Pursuing a Bachelor's degree in Informatics with a focus on software development, UI/UX design, and digital product innovation. Actively engaging in academic and extracurricular activities to strengthen both technical and soft skills in preparation for a career in the tech industry."
           />
         </div>
       </section>
