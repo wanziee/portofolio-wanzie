@@ -19,8 +19,6 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
   gapX,
   baseWidth,
   direction = "row",
-  justifyContent = "center",
-  alignItems = "center",
 }) => {
   const dockRef = useRef<HTMLDivElement>(null);
 

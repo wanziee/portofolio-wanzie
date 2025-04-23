@@ -15,10 +15,8 @@ const EducationCard = ({
   certificate,
   date,
   description,
-  link,
 }: EducationCardProps) => {
   const [expanded, setExpanded] = useState(false);
-  const [show, setShow] = useState(false);
 
   const toggleDescription = (e: React.MouseEvent) => {
     e.preventDefault(); // biar gak langsung ke link
