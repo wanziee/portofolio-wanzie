@@ -88,7 +88,7 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
     <div className="fixed bottom-[1px] left-1/2 -translate-x-1/2 z-50">
       <div
         ref={dockRef}
-        className="flex border px-2 border-gray-200 backdrop-blur bg-white/15  shadow-lg rounded-full will-change-transform overflow-visible"
+        className="flex border px-2 border-border-dock bg-background  dark:[border:1px_solid_rgba(255,255,255,.1)] dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] shadow-lg rounded-full will-change-transform overflow-visible"
         style={{
           flexDirection: direction,
           justifyContent: "center",

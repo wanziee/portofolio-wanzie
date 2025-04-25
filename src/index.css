@@ -1,5 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  background-color: rgb(255, 255, 255);
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+.light {
+  --primary: #08090a;
+  --secondary: #eaeaea;
+  --muted-foreground: #737373;
+  --background: #ffffff;
+  --accent: #2f2f2f;
+  --bg-dock: #ffffff;
+  --border-dock: #bababa;
+  --accent-dock: #282828;
+}
+
+.dark {
+  --primary: #ffffff;
+  --secondary: #303030cc;
+  --muted-foreground: #a3a3a3;
+  --background: #08090a;
+  --accent: #343434;
+  --bg-dock: #161616;
+  --border-dock: #232323;
+  --accent-dock: #232323;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-background: var(--background);
+  --color-accent: var(--accent);
+  --color-bg-dock: var(--bg-dock);
+  --color-border-dock: var(--border-dock);
+  --color-accent-dock: var(--accent-dock);
+
+  --color-muted-foreground: var(--muted-foreground);
 }
