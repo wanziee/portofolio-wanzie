@@ -1,5 +1,5 @@
 import DynamicDock from "./dynamic-dock";
-import Sun from "../assets/sun.png";
+
 import ToolTip from "./ToolTip";
 
 function StickyBottomNavigationBar() {
