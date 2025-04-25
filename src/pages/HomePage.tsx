@@ -99,7 +99,7 @@ const HomePage = () => {
             logo={Oracle}
             institution="Oracle Corporation"
             certificate="Professional Certification"
-            date="Mei 2024 – Jun 2024"
+            date="Mar 2024 – Jun 2024"
             description="I participated in the Oracle Data Modeler training program, where I learned how to design and manage database structures using Oracle's modeling tools. The program enhanced my understanding of relational databases, ER diagrams, and best practices in data architecture."
           />
           <EducationCard
