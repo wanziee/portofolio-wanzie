@@ -1,10 +1,10 @@
-import DynamicDock from "./dynamic-dock";
-import ThemeToggle from "./ThemeToggle";
-import ToolTip from "./ToolTip";
+import DynamicDock from "../dynamic-dock";
+import ThemeToggle from "../ThemeToggle";
+import ToolTip from "../ToolTip";
 
 function StickyBottomNavigationBar() {
   return (
-    <DynamicDock gapX={4} baseWidth={32}>
+    <DynamicDock gapX={4} baseWidth={30}>
       <div className="dock-item flex items-center justify-center relative group">
         <ToolTip label="Home" />
 

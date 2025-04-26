@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 interface DynamicDockProps {
   children: React.ReactNode;
@@ -21,9 +21,20 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
   direction = "row",
 }) => {
   const dockRef = useRef<HTMLDivElement>(null);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    if (!dockRef.current) return;
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // anggap 768px ke bawah itu mobile
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  useEffect(() => {
+    if (!dockRef.current || isMobile) return;
 
     const dock = dockRef.current;
     const items = dock.querySelectorAll(".dock-item");
@@ -82,13 +93,13 @@ const DynamicDock: React.FC<DynamicDockProps> = ({
       document.removeEventListener("mousemove", handleMouseMove);
       dock.removeEventListener("mouseleave", handleMouseLeave);
     };
-  }, [gapX, baseWidth]);
+  }, [gapX, baseWidth, isMobile]);
 
   return (
     <div className="fixed bottom-[1px] left-1/2 -translate-x-1/2 z-50">
       <div
         ref={dockRef}
-        className="flex border px-2  bg-background border-border-dock dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] shadow-lg rounded-full will-change-transform overflow-visible"
+        className="flex border px-2 bg-background border-border-dock dark:[box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] shadow-lg rounded-full will-change-transform overflow-visible"
         style={{
           flexDirection: direction,
           justifyContent: "center",

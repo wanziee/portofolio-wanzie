@@ -31,7 +31,7 @@ const EducationCard = ({
     >
       <div className="flex items-start">
         <div className="flex-none">
-          <span className="relative flex shrink-0 overflow-hidden rounded-full border-[0.5px] border-gray-200 dark:border-gray-700 size-12 m-auto bg-muted-background dark:bg-foreground">
+          <span className="relative flex shrink-0 overflow-hidden rounded-full border border-accent size-12 m-auto bg-muted-background dark:bg-foreground">
             <img
               src={logo}
               alt={`${institution} logo`}
