@@ -168,7 +168,7 @@ const HomePage = () => {
               <div className="flex items-center pt-2 px-2 pb-2">
                 <div className="flex flex-row flex-wrap items-start gap-1">
                   <a href="">
-                    <div className="items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-primary-foreground shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
+                    <div className="items-center rounded-md border font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 border-transparent bg-primary text-background shadow hover:bg-primary/80 flex gap-2 px-2 py-1 text-[10px]">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="13"

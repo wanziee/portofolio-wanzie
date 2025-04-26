@@ -8,8 +8,8 @@
   --background: #ffffff;
   --accent: #2f2f2f;
   --bg-dock: #ffffff;
-  --border-dock: #bababa;
-  --accent-dock: #282828;
+  --border-dock: #d4d4d4;
+  --accent-dock: #f1f1f1;
 }
 
 .dark {
@@ -19,7 +19,7 @@
   --background: #08090a;
   --accent: #343434;
   --bg-dock: #161616;
-  --border-dock: #232323;
+  --border-dock: rgba(255, 255, 255, 0.1);
   --accent-dock: #232323;
 }
 
