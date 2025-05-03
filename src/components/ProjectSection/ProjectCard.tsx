@@ -1,4 +1,4 @@
-import GameloadProject from "../assets/gameload_project.png";
+import GameloadProject from "../../assets/gameload_project.png";
 const ProjectCard = () => {
   return (
     <section id="projects" className="mt-[40px]">

@@ -1,6 +1,6 @@
-import DynamicDock from "../dynamic-dock";
-import ThemeToggle from "../ThemeToggle";
-import ToolTip from "../ToolTip";
+import DynamicDock from "./dynamic-dock";
+import ThemeToggle from "./ThemeToggle";
+import ToolTip from "./ToolTip";
 
 function StickyBottomNavigationBar() {
   return (

@@ -1,5 +1,5 @@
-import Moon from "../assets/moon.png";
-import Sun from "../assets/sun.png";
+import Moon from "../../assets/moon.png";
+import Sun from "../../assets/sun.png";
 import { useState, useEffect } from "react";
 
 function ThemeToggle() {

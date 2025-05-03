@@ -1,4 +1,4 @@
-import Foto from "../assets/foto.jpeg";
+import Foto from "../../assets/foto.jpeg";
 const HeroSection = () => {
   return (
     <section id="hero">

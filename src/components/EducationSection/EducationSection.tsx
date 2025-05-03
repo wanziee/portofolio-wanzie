@@ -12,6 +12,7 @@ const EducationSection = () => {
           certificate="Professional Certification"
           date="Mar 2024 – Jun 2024"
           description="I participated in the Oracle Data Modeler training program, where I learned how to design and manage database structures using Oracle's modeling tools. The program enhanced my understanding of relational databases, ER diagrams, and best practices in data architecture."
+          link="https://drive.google.com/drive/folders/1ZfNZMADh17NjOdlq6MVx4sZrHtz1_gpY?usp=sharing"
         />
         <EducationCard
           logo={Bsi}

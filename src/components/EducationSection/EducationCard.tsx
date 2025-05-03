@@ -6,6 +6,7 @@ type EducationCardProps = {
   certificate: string;
   date: string;
   description: string;
+  link?: string;
 };
 
 const EducationCard = ({
@@ -14,24 +15,28 @@ const EducationCard = ({
   certificate,
   date,
   description,
+  link,
 }: EducationCardProps) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleDescription = (e: React.MouseEvent) => {
-    e.preventDefault(); // biar gak langsung ke link
+    const target = e.target as HTMLElement;
+
+    // Jika kliknya pada <a>, jangan toggle atau preventDefault
+    if (target.tagName.toLowerCase() === "a") return;
+
+    e.preventDefault(); // hanya jika bukan <a>
     setExpanded((prev) => !prev);
   };
 
   return (
-    <a
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       className="block transition group cursor-pointer"
       onClick={toggleDescription}
     >
       <div className="flex items-start">
         <div className="flex-none">
-          <span className="relative flex shrink-0 overflow-hidden rounded-full border border-accent size-12 m-auto bg-muted-background dark:bg-foreground">
+          <span className="relative flex shrink-0 overflow-hidden rounded-full border border-accent size-12 m-auto bg-white">
             <img
               src={logo}
               alt={`${institution} logo`}
@@ -74,11 +79,24 @@ const EducationCard = ({
               expanded ? "max-h-32 opacity-100 mt-2" : "max-h-0 opacity-0"
             } text-xs sm:text-sm`}
           >
-            {description}
+            {description}{" "}
+            {link && (
+              <>
+                {" "}
+                <a
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-400"
+                >
+                  (Certificate)
+                </a>
+              </>
+            )}
           </div>
         </div>
       </div>
-    </a>
+    </div>
   );
 };
 export default EducationCard;

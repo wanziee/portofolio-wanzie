@@ -1,11 +1,11 @@
 import StickyBottomNavigationBar from "../components/dock/StickyBottomNavigationBar";
 
-import SkillsLabel from "../components/SkillsLabel";
-import ProjectCard from "../components/ProjectCard";
+import SkillsLabel from "../components/SkillsSection/SkillsLabel";
+import ProjectCard from "../components/ProjectSection/ProjectCard";
 import EducationSection from "../components/EducationSection/EducationSection";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
-import AboutSection from "../components/AboutSection";
-import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/Hero&AboutSection/AboutSection";
+import HeroSection from "../components/Hero&AboutSection/HeroSection";
 
 const skillsDatas = [
   "Design",
