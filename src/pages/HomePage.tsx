@@ -37,9 +37,7 @@ const HomePage = () => {
       {/* education section */}
       <EducationSection />
 
-      <section id="skills" className="mt-[40px]">
-        <SkillsLabel skills={skillsDatas} />
-      </section>
+      <SkillsLabel skills={skillsDatas} />
 
       {/* project section */}
       <ProjectCard />
