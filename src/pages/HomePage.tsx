@@ -25,6 +25,7 @@ const HomePage = () => {
   return (
     <div>
       {/* hero section */}
+
       <HeroSection />
 
       {/* about section */}

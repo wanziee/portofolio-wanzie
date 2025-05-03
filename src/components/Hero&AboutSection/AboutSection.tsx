@@ -18,7 +18,7 @@ const AboutSection = () => {
           </a>
           , a website for game top-ups, and{" "}
           <a
-            href="https://github.com/wanziee/ZielyApp"
+            href="https://github.com/wanziee/Quizie"
             className="text-primary underline font-semibold"
           >
             Quizzie

@@ -32,7 +32,7 @@ function StickyBottomNavigationBar() {
       <div className="dock-item flex items-center justify-center relative group">
         <ToolTip label="Projects" />
         <a
-          href="#"
+          href="#projects"
           className="w-12 h-12 rounded-full  hover:bg-accent-dock  flex items-center justify-center transition-colors"
         >
           <svg
