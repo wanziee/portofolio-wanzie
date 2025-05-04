@@ -1,7 +1,6 @@
 import { useState } from "react";
 import GameloadProject from "../../assets/gameload_project.png";
 import BlurFade from "../../magicui/blur-fade";
-import BlurFadeText from "../../magicui/blur-fade-text";
 
 const BLUR_FADE_DELAY = 0.04;
 const ProjectCard = () => {

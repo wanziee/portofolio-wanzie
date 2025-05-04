@@ -1,5 +1,4 @@
 import BlurFade from "../../magicui/blur-fade";
-import BlurFadeText from "../../magicui/blur-fade-text";
 
 const BLUR_FADE_DELAY = 0.04;
 
