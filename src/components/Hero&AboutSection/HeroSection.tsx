@@ -1,28 +1,39 @@
-import Foto from "../../assets/foto.jpeg";
+import FotoLight from "../../assets/foto.jpeg";
+import BlurFade from "../../magicui/blur-fade";
+import BlurFadeText from "../../magicui/blur-fade-text";
+
+const BLUR_FADE_DELAY = 0.04;
+
 const HeroSection = () => {
   return (
     <section id="hero">
       <div className="flex justify-between items-start max-w-6xl mx-auto text-primary">
         {/* Teks kiri */}
         <div className="flex-1 space-y-2">
-          <h1 className="inline-block text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-            <span>Hi, I'm Ichwan 👋</span>
-          </h1>
-
-          <p className="inline-block max-w-[600px] md:text-xl">
-            UI/UX Designer, software engineer
-          </p>
+          <BlurFadeText
+            delay={BLUR_FADE_DELAY}
+            className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
+            yOffset={8}
+            text={`Hi, I'm ${"Wanziee".split(" ")[0]} 👋`}
+          />
+          <BlurFadeText
+            className="max-w-[600px] md:text-xl"
+            delay={BLUR_FADE_DELAY}
+            text=" UI/UX Designer, software engineer"
+          />
         </div>
 
         {/* Foto kanan */}
         <div>
-          <div className="size-28 rounded-full overflow-hidden">
-            <img
-              src={Foto}
-              alt="Mohammad Ichwan Al Ghifari"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <div className="size-28 rounded-full overflow-hidden">
+              <img
+                alt="ichwan"
+                src={FotoLight}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </BlurFade>
         </div>
       </div>
     </section>

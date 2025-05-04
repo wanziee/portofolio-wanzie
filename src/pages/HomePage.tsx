@@ -5,7 +5,7 @@ import ProjectCard from "../components/ProjectSection/ProjectCard";
 import EducationSection from "../components/EducationSection/EducationSection";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
 import AboutSection from "../components/Hero&AboutSection/AboutSection";
-import HeroSection from "../components/Hero&AboutSection/HeroSection";
+import HeroSection from "../components/Hero&AboutSection/HeroSection"; // Pastikan path-nya benar
 
 const skillsDatas = [
   "Design",
