@@ -1,24 +1,25 @@
 import StickyBottomNavigationBar from "../components/dock/StickyBottomNavigationBar";
 
 import SkillsLabel from "../components/SkillsSection/SkillsLabel";
-import ProjectCard from "../components/ProjectSection/ProjectCard";
 import EducationSection from "../components/EducationSection/EducationSection";
 import ExperienceSection from "../components/ExperienceSection/ExperienceSection";
 import AboutSection from "../components/Hero&AboutSection/AboutSection";
 import HeroSection from "../components/Hero&AboutSection/HeroSection"; // Pastikan path-nya benar
+import ProjectSection from "../components/ProjectSection/ProjectSection";
 
 const skillsDatas = [
-  "Design",
   "React",
   "Laravel",
   "Swift",
+  "SwiftUI",
   "Typescript",
   "Php",
   "Project Management",
   "Python",
   "Painting",
   "Drawing",
-  "SwiftUI",
+  "Figma",
+  "Photoshop",
 ];
 
 const HomePage = () => {
@@ -40,7 +41,7 @@ const HomePage = () => {
       <SkillsLabel skills={skillsDatas} />
 
       {/* project section */}
-      <ProjectCard />
+      <ProjectSection />
 
       <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50">
         <StickyBottomNavigationBar />
