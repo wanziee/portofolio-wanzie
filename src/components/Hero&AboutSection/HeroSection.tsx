@@ -1,4 +1,4 @@
-import FotoLight from "../../assets/foto.jpeg";
+import Foto from "../../assets/foto1.jpg";
 import BlurFade from "../../magicui/blur-fade";
 import BlurFadeText from "../../magicui/blur-fade-text";
 
@@ -29,7 +29,7 @@ const HeroSection = () => {
             <div className="size-28 rounded-full overflow-hidden">
               <img
                 alt="ichwan"
-                src={FotoLight}
+                src={Foto}
                 className="w-full h-full object-cover"
               />
             </div>
