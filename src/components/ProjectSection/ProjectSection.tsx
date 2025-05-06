@@ -33,6 +33,7 @@ const ProjectSection = () => {
                 links={project.links}
                 technologies={project.technologies}
                 image={project.image}
+                video={project.video}
               />
             ))}
           </div>

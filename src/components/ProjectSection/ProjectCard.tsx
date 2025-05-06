@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 type ProjectCardProps = {
   title: string;
   dates: string;
@@ -11,6 +9,7 @@ type ProjectCardProps = {
     type: string;
     href: string;
   }[];
+  video?: string;
 };
 
 const ProjectCard = ({
@@ -20,47 +19,31 @@ const ProjectCard = ({
   technologies,
   image,
   links,
+  video,
 }: ProjectCardProps) => {
-  const [isImageOpen, setIsImageOpen] = useState(false);
   return (
     <div className="rounded-lg bg-card text-card-foreground flex flex-col overflow-hidden border border-secondary hover:shadow-lg transition-all duration-300 ease-out h-full">
-      <div
-        className="block cursor-pointer"
-        onClick={() => setIsImageOpen(true)}
-      >
-        <img src={image} alt="gameload" />
-      </div>
-      {isImageOpen && (
-        <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-999">
-          {/* Tombol Kembali */}
-          <button
-            onClick={() => setIsImageOpen(false)}
-            className="absolute top-25 right-50 text-white text-2xl font-bold hover:text-red-400 transition"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="lucide lucide-x-icon lucide-x"
-            >
-              <path d="M18 6 6 18" />
-              <path d="m6 6 12 12" />
-            </svg>
-          </button>
-
+      <div className="block cursor-pointer">
+        {video && (
+          <video
+            src={video}
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="pointer-events-none mx-auto h-40 w-full object-cover object-top" // needed because random black line at bottom of video
+          />
+        )}
+        {image && (
           <img
             src={image}
-            alt="gameload large"
-            className="max-h-[70vh] max-w-[70vw] rounded-xl shadow-lg"
+            alt={title}
+            width={500}
+            height={300}
+            className="h-40 w-full overflow-hidden object-cover object-top"
           />
-        </div>
-      )}
+        )}
+      </div>
 
       <div className="flex flex-col px-2">
         <div className="space-y-1">
