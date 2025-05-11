@@ -6,7 +6,6 @@ import AboutSection from "../components/Hero&AboutSection/AboutSection";
 import HeroSection from "../components/Hero&AboutSection/HeroSection";
 import ProjectSection from "../components/ProjectSection/ProjectSection";
 import ContactSection from "../components/ContactMe/ContactSection";
-import { DATA } from "../data/resume";
 
 const HomePage = () => {
   return (
@@ -24,7 +23,7 @@ const HomePage = () => {
       {/* education section */}
       <EducationSection />
 
-      <SkillsLabel skills={DATA.skillsData} />
+      <SkillsLabel />
 
       {/* project section */}
       <ProjectSection />
