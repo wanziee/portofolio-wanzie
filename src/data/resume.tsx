@@ -105,4 +105,19 @@ export const DATA = {
       link: "",
     },
   ],
+
+  skillsData: [
+    "React",
+    "Laravel",
+    "Swift",
+    "SwiftUI",
+    "Typescript",
+    "Php",
+    "Project Management",
+    "Python",
+    "Painting",
+    "Drawing",
+    "Figma",
+    "Photoshop",
+  ],
 };

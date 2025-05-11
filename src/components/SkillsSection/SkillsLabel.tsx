@@ -1,12 +1,10 @@
 import BlurFade from "../../magicui/blur-fade";
+import { DATA } from "../../data/resume";
 
 const BLUR_FADE_DELAY = 0.04;
 
-type SkillsLabelProps = {
-  skills: string[];
-};
-
-const SkillsLabel = ({ skills }: SkillsLabelProps) => {
+const SkillsLabel = () => {
+  const skills = DATA.skillsData || [];
   return (
     <section id="skills" className="mt-[40px]">
       <div className="flex min-h-0 flex-col gap-y-3">
