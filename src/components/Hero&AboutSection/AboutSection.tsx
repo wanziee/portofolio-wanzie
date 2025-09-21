@@ -13,7 +13,7 @@ const AboutSection = () => {
       <BlurFade delay={BLUR_FADE_DELAY * 4}>
         <div className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert ">
           <p>
-            I'm passionate about coding and design, with a deep love for
+            {/* I'm passionate about coding and design, with a deep love for
             painting and drawing as my creative hobbies. Currently, I'm working
             on two personal projects:{" "}
             <a
@@ -29,7 +29,9 @@ const AboutSection = () => {
             >
               Quizzie
             </a>
-            , a fun and educational quiz app.
+            , a fun and educational quiz app. */}
+
+            I'm passionate about coding, design, and art. Painting and drawing fuel my creativity, while coding lets me bring ideas to life. At the moment, I’m focusing on becoming an iOS developer, sharpening my skills to create apps that are both functional and beautifully designed.
           </p>
         </div>
       </BlurFade>
