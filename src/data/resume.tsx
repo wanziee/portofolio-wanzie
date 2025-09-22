@@ -182,8 +182,6 @@ skillsData: [
   "Php",
   "Project Management",
   "Python",
-  "Painting",
-  "Drawing",
   "Figma",
   "Photoshop",
   "PostgreSQL",
