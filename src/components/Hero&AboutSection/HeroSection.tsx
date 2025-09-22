@@ -19,7 +19,7 @@ const HeroSection = () => {
           <BlurFadeText
             className="max-w-[600px] md:text-xl"
             delay={BLUR_FADE_DELAY}
-            text=" UI/UX Designer, Software Engineer"
+            text="Software Engineer, UI/UX Designer"
           />
         </div>
 
