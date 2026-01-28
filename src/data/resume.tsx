@@ -3,7 +3,7 @@ import Project2 from "../assets/project2.jpg";
 import Oracle from "../assets/oracle.jpeg";
 import Bsi from "../assets/logo-bsi.png";
 import Telkom from "../assets/telkom.jpg";
-import projextup from "../assets/projextup.png";
+import projectup from "../assets/projextup.png";
 import Project3 from "../assets/project3.jpg";
 import Project4 from "../assets/project4.jpg";
 
@@ -38,7 +38,7 @@ export const DATA = {
           ),
         },
       ],
-      image: projextup,
+      image: projectup,
       video: "",
     },
     {
