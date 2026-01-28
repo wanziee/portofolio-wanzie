@@ -5,7 +5,7 @@ import { DATA } from "../../data/resume";
 const BLUR_FADE_DELAY = 0.04;
 const ProjectSection = () => {
   return (
-    <section id="projects" className="mt-[40px]">
+    <section id="projects" className="mt-10">
       <div className="space-y-12 w-full py-10">
         <BlurFade delay={BLUR_FADE_DELAY * 14}>
           <div className="flex flex-col items-center justify-center text-center space-y-2">
@@ -23,7 +23,7 @@ const ProjectSection = () => {
         </BlurFade>
 
         <BlurFade delay={BLUR_FADE_DELAY * 15}>
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-200 mx-auto">
             {DATA.projects?.map((project, idx) => (
               <ProjectCard
                 key={idx}
