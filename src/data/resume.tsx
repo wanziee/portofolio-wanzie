@@ -180,12 +180,12 @@ skillsData: [
   "SwiftUI",
   "Typescript",
   "Php",
-  "Project Management",
   "Python",
   "Figma",
   "Photoshop",
   "PostgreSQL",
   "Express",
   "Node.js",
+  "Project Management",
 ],
 };
