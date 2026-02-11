@@ -31,7 +31,7 @@ const AboutSection = () => {
             </a>
             , a fun and educational quiz app. */}
 
-            I'm passionate about coding, design, and art. Painting and drawing fuel my creativity, while coding lets me bring ideas to life. At the moment, I’m focusing on becoming an iOS developer, sharpening my skills to create apps that are both functional and beautifully designed.
+            I’m highly focused on coding and software development, with a strong interest in building clean, functional, and well-designed applications. Currently, I’m concentrating on becoming an iOS developer, continuously sharpening my skills to create apps that combine performance, usability, and thoughtful design.
           </p>
         </div>
       </BlurFade>
